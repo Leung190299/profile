@@ -1,4 +1,17 @@
+@import url('https://fonts.cdnfonts.com/css/general-sans');
 @import "tailwindcss";
 
 
 
+@theme {
+  --color-black: #000000;
+  --color-black-100: #010103;
+  --color-black-200: #0e0e10;
+  --color-black-300: #1c1c21;
+  --color-black-500: #3a3a49;
+  --color-black-600: #1a1a1a;
+
+  --color-white: #ffffff;
+
+  --font-sans: 'General Sans', sans-serif;
+}
