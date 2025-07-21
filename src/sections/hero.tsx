@@ -1,6 +1,10 @@
+import Flutter from "@/components/flutter"
+import HeroCamera from "@/components/HeroCamera"
+import Keyboard from "@/components/keyBoard"
 import CanvasLoader from "@/components/Loading"
 import { ReactLogo } from "@/components/reactLogo"
 import { TableWork } from "@/components/tableWork"
+import Target from "@/components/target"
 import { PerspectiveCamera } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
 import { Leva, useControls } from 'leva'
@@ -43,12 +47,16 @@ const Hero = () => {
 				<Canvas className="w-full h-full">
 					<Suspense fallback={<CanvasLoader />}>
 						{/* To hide controller */}
-						<PerspectiveCamera makeDefault position={[3.4, 6.4, -2.2]} rotation={[0, 1.15, 0]} />
-						<TableWork position={0} rotation={[0, -0.2, -0.3]} />
+						<PerspectiveCamera makeDefault position={[0, 0, 5]} />
+						<HeroCamera isMobile={false}>
+							<TableWork position={[-4, -5, 0]} rotation={[0.25, -1.5, 0]} />
+						</HeroCamera>
 
 						<group>
-							{/* <Target position={sizes.targetPosition} /> */}
-							<ReactLogo position={[position.x, position.y, position.z]} />
+							<ReactLogo position={[12, 5, -12]} scale={0.4} />
+							<Flutter position={[-2, -0.5, 2]} />
+							<Keyboard position={[2, -0.5, 2]} />
+							<Target position={[-2, 0.5, 2]} />
 							{/* <Rings position={sizes.ringPosition} />
               <Cube position={sizes.cubePosition} /> */}
 						</group>
