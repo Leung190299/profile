@@ -7,7 +7,7 @@ import { TableWork } from "@/components/tableWork"
 import Target from "@/components/target"
 import { PerspectiveCamera } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
-import { Leva, useControls } from 'leva'
+import { useControls } from 'leva'
 import { Suspense } from "react"
 
 
@@ -43,7 +43,7 @@ const Hero = () => {
 			</div>
 
 			<div className="w-full h-full absolute inset-0">
-				<Leva collapsed />
+				{/* <Leva collapsed /> */}
 				<Canvas className="w-full h-full">
 					<Suspense fallback={<CanvasLoader />}>
 						{/* To hide controller */}
