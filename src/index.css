@@ -65,7 +65,7 @@ body {
 
   /* projects section  */
   .arrow-btn {
-    @apply w-10 h-10 p-3 cursor-pointer active:scale-95 transition-all rounded-full;
+    @apply w-10 h-10 p-3 cursor-pointer active:scale-95 transition-all rounded-full hover:shadow-black-200 shadow-2xl bg-black-300 flex justify-center items-center;
   }
 
   .tech-logo {
@@ -122,12 +122,12 @@ body {
       0 0 60px rgba(255, 255, 255, 0.1);
   }
 
- .shadow-orange-gradient {
-  box-shadow:
-    0 0 20px rgba(251, 146, 60, 0.4),
-    0 0 40px rgba(251, 146, 60, 0.3),
-    0 0 60px rgba(251, 146, 60, 0.2);
-}
+  .shadow-orange-gradient {
+    box-shadow:
+      0 0 20px rgba(251, 146, 60, 0.4),
+      0 0 40px rgba(251, 146, 60, 0.3),
+      0 0 60px rgba(251, 146, 60, 0.2);
+  }
 
   .field-label {
     @apply text-lg;

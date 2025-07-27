@@ -7,31 +7,31 @@ import { TableWork } from "@/components/tableWork"
 import Target from "@/components/target"
 import { PerspectiveCamera } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
-import { useControls } from 'leva'
+
 import { Suspense } from "react"
 
 
 const Hero = () => {
-	const position = useControls("Table Position", {
-		x: { value: 0, min: -20, max: 20 },
-		y: { value: 0, min: -20, max: 20 },
-		z: { value: 5, min: -20, max: 20 },
-	})
-	const rotation = useControls("Table Rotation", {
-		x: { value: 0, min: -Math.PI, max: Math.PI },
-		y: { value: 0, min: -Math.PI, max: Math.PI },
-		z: { value: 0, min: -Math.PI, max: Math.PI },
-	})
-	const cameraPosition = useControls("Camera Position", {
-		x: { value: 0, min: -10, max: 10 },
-		y: { value: 0, min: -10, max: 10 },
-		z: { value: 5, min: -10, max: 10 },
-	})
-	const cameraRotation = useControls("Camera Rotation", {
-		x: { value: 0, min: -Math.PI, max: Math.PI },
-		y: { value: 0, min: -Math.PI, max: Math.PI },
-		z: { value: 0, min: -Math.PI, max: Math.PI },
-	})
+	// const position = useControls("Table Position", {
+	// 	x: { value: 0, min: -20, max: 20 },
+	// 	y: { value: 0, min: -20, max: 20 },
+	// 	z: { value: 5, min: -20, max: 20 },
+	// })
+	// const rotation = useControls("Table Rotation", {
+	// 	x: { value: 0, min: -Math.PI, max: Math.PI },
+	// 	y: { value: 0, min: -Math.PI, max: Math.PI },
+	// 	z: { value: 0, min: -Math.PI, max: Math.PI },
+	// })
+	// const cameraPosition = useControls("Camera Position", {
+	// 	x: { value: 0, min: -10, max: 10 },
+	// 	y: { value: 0, min: -10, max: 10 },
+	// 	z: { value: 5, min: -10, max: 10 },
+	// })
+	// const cameraRotation = useControls("Camera Rotation", {
+	// 	x: { value: 0, min: -Math.PI, max: Math.PI },
+	// 	y: { value: 0, min: -Math.PI, max: Math.PI },
+	// 	z: { value: 0, min: -Math.PI, max: Math.PI },
+	// })
 
 	return (
 		<section className="min-h-screen w-full flex flex-col relative" id="home">

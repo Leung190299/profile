@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { LuCopy, LuCopyCheck } from 'react-icons/lu';
 
 
 const About = () => {
@@ -84,7 +85,7 @@ const About = () => {
             <div className="space-y-2">
               <p className="grid-subtext text-center">Contact me</p>
               <div className="copy-container" onClick={handleCopy}>
-                <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
+               {hasCopied ? <LuCopyCheck className='text-green-500' /> : <LuCopy className='text-white' />}
                 <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">leung190299@gmail.com</p>
               </div>
             </div>
