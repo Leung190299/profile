@@ -3,8 +3,11 @@ import { MdClose, MdMenu } from "react-icons/md";
 
 const Menus: Array<navbar.NavbarItem> = [
   { label: 'Home', link: '/', icon: 'home', active: true },
-  { label: 'About', link: '/about', icon: 'info' },
-  { label: 'Contact', link: '/contact', icon: 'phone' }
+  { label: 'About', link: '#about', icon: 'info' },
+  { label: 'Projects', link: '#projects', icon: 'work' },
+  { label: 'Experience', link: '#experience', icon: 'work' },
+  { label: 'Contact', link: '#contact', icon: 'phone' },
+
 ];
 const NavItems = ({ onClick = () => {} }: { onClick?: () => void }) => (
   <ul className="nav-ul">

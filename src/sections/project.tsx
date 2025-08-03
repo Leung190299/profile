@@ -36,7 +36,7 @@ const Projects = () => {
 
 
   return (
-    <section className="c-space my-20 container mx-auto">
+    <section className="c-space my-20 container mx-auto" id="projects">
 
       <p className="head-text text-white">My Selected Work</p>
 

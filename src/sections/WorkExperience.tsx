@@ -11,7 +11,7 @@ const WorkExperience = () => {
   const [animationName, setAnimationName] = useState('idle');
 
   return (
-    <section className="c-space my-20 container mx-auto" id="work">
+    <section className="c-space my-20 container mx-auto" id="experience">
       <div className="w-full text-white-600">
         <p className="head-text text-white">My Work Experience</p>
 
