@@ -13,7 +13,7 @@ const WorkExperience = () => {
   return (
     <section className="c-space my-20 container mx-auto" id="work">
       <div className="w-full text-white-600">
-        <p className="head-text">My Work Experience</p>
+        <p className="head-text text-white">My Work Experience</p>
 
         <div className="work-container">
           <div className="work-canvas">
@@ -47,11 +47,11 @@ const WorkExperience = () => {
                   </div>
 
                   <div className="sm:p-5 px-2.5 py-5">
-                    <p className="font-bold text-white-800">{item.name}</p>
-                    <p className="text-sm mb-5">
-                      {item.pos} -- <span>{item.duration}</span>
+                    <p className="font-bold text-white">{item.name}</p>
+                    <p className="text-sm mb-5 text-white">
+                      {item.pos}
                     </p>
-                    <p className="group-hover:text-white transition-all ease-in-out duration-500">{item.title}</p>
+                    <p className="group-hover:text-white text-white transition-all ease-in-out duration-500">{item.title}</p>
                   </div>
                 </div>
               ))}
@@ -68,29 +68,26 @@ export default WorkExperience;
  const workExperiences = [
   {
     id: 1,
-    name: 'Framer',
-    pos: 'Lead Web Developer',
-    duration: '2022 - Present',
-    title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
+    name: 'Flutter',
+    pos: ' Mobile App Developer',
+    title: "Flutter is my framework of choice for building cross-platform mobile applications. I utilize its expressive UI and reactive programming model to create visually appealing and performant apps.",
     icon: '/assets/Flutter.png',
     animation: 'victory',
   },
   {
     id: 2,
-    name: 'Figma',
-    pos: 'Web Developer',
-    duration: '2020 - 2022',
-    title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: '/assets/figma.svg',
+    name: 'React-Native',
+    pos: 'Mobile App Developer',
+    title: "React-Native is my framework of choice for building mobile applications. I utilize its component-based architecture to create reusable UI elements, streamlining the development process and enhancing maintainability.",
+    icon: '/assets/reactjs.png',
     animation: 'clapping',
   },
   {
     id: 3,
-    name: 'Notion',
+    name: 'Next.js',
     pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: '/assets/notion.svg',
+    title: "Next.js is my framework of choice for building server-rendered applications. I leverage its file-based routing and API routes to create seamless user experiences.",
+    icon: '/assets/nextjs.webp',
     animation: 'salute',
   },
 ];
